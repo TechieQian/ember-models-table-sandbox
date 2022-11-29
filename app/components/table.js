@@ -1,5 +1,5 @@
 import Component from '@glimmer/component';
-import Service, { inject as service } from '@ember/service';
+import { inject as service } from '@ember/service';
 import { faker } from '@faker-js/faker';
 
 export default class Table extends Component {
