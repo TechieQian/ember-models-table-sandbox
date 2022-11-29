@@ -24,7 +24,7 @@ export default class ServerTable extends Component {
   @action
   doQuery(query) {
     const pageSize = query.pageSize;
-    const start = this.currentPageNumber * pageSize;
+    const start = (this.currentPageNumber - 1) * pageSize;
     const sliced = persons.slice(start, start + pageSize);
     this.queuedModel = sliced;
     return Promise.resolve(this.queuedModel);
