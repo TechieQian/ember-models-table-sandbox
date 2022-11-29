@@ -16,6 +16,8 @@ export default class ServerTable extends Component {
   @tracked
   currentPageNumber = 1;
 
+  itemsCount = persons.length;
+
   @tracked
   pageSize;
 
