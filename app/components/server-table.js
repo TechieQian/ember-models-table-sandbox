@@ -21,7 +21,6 @@ export default class ServerTable extends Component {
 
   @action
   doQuery(query) {
-    console.log('query', query);
     const pageSize = query.pageSize;
     const start = this.currentPageNumber * pageSize;
     const sliced = persons.slice(start, start + pageSize);
@@ -31,7 +30,6 @@ export default class ServerTable extends Component {
 
   @action
   onDisplayDataChanged(displayData) {
-    console.log('ondisplay', displayData);
     this.currentPageNumber = displayData.currentPageNumber;
     this.pageSize = displayData.pageSize;
   }
